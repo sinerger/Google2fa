@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [dbo].[GetIsExistTFAByLeadID] @LeadID UNIQUEIDENTIFIER
+AS
+SELECT L.IsExist
+FROM [dbo].[LeadsTFA] AS L
+WHERE L.LeadID = @LeadID

@@ -1,0 +1,11 @@
+﻿CREATE PROCEDURE [dbo].[AddTFAKeyToLead] @LeadID UNIQUEIDENTIFIER,
+	@TFAKey NVARCHAR(500)
+AS
+INSERT INTO [dbo].[LeadsTFA] (
+	LeadID,
+	TFAKey
+	)
+VALUES (
+	@LeadID,
+	@TFAKey
+	)
